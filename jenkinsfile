@@ -1,0 +1,36 @@
+pipeline {
+    agent any
+
+    stages {
+
+        stage('Build') {
+            steps {
+                echo "Building the code"
+                bat 'echo Build Stage'
+                bat 'echo %DATE% %TIME%'
+            }
+        }
+
+        stage('Test') {
+            steps {
+                echo "Test the code"
+                bat 'echo Test Stage'
+            }
+        }
+
+        stage('Deploy') {
+            steps {
+                echo "Deploy the code"
+                bat 'echo Deploy Stage'
+            }
+        }
+
+        stage('Release') {
+            steps {
+                echo "Release the code"
+                bat 'echo Release Stage'
+            }
+        }
+
+    }
+}
