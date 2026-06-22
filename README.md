@@ -2,5 +2,4 @@
 //mahi
 //prince
 //mahesh
-//sridhar
 //reddy
